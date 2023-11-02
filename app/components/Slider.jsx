@@ -154,20 +154,20 @@ const SlideshowComponent = () => {
         <div className="slides">
           <div className="slide">
             <div className="slide__img relative">
-              <Image src={ImageOne} priority alt="Slide 1" />
+              <Image src={ImageOne} priority={true} alt="Slide 1" />
               <div className="absolute inset-0 bg-gradient-to-b from-slate-800/90  to-slate-800/30"></div>
             </div>
           </div>
           <div className="slide">
             <div className="slide__img relative">
-              <Image src={ImageTwo} priority alt="Slide 1" />
+              <Image src={ImageTwo} priority={true} alt="Slide 1" />
               {/* <div className="absolute inset-0 overlay-gradient bg-slate-800 opacity-50"></div> */}
               <div className="absolute inset-0 bg-gradient-to-b from-slate-800/90  to-slate-800/30"></div>
             </div>
           </div>
           <div className="slide">
             <div className="slide__img relative">
-              <Image src={ImageThree} priority alt="Slide 1" />
+              <Image src={ImageThree} priority={true} alt="Slide 1" />
               {/* <div className="absolute inset-0 overlay-gradient bg-slate-800 opacity-50"></div> */}
               <div className="absolute inset-0 bg-gradient-to-b from-slate-800/90  to-slate-800/30"></div>
             </div>
