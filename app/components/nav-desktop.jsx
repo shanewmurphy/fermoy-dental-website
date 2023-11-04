@@ -1,7 +1,7 @@
 export default function NavDesktop() {
   return (
     <div className="absolute top-5 left-0 right-0 desktop-nav">
-      <div className="w-10/12 mx-auto bg-slate-700/90 backdrop-opacity-70 rounded-md p-2 flex  justify-between items-center">
+      <div className="w-10/12 mx-auto bg-slate-700/80 backdrop-opacity-70 rounded-md p-2 flex justify-between items-center">
         <div>
           <ul className="inline-flex items-center pt-1 text-white text-xs font-semibold uppercase antialiased">
             <li className="pl-3">

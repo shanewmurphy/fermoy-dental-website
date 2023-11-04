@@ -5,13 +5,13 @@ export default function IntroSection() {
   return (
     <div className="w-screen bg-lightgreen/30">
       <div className="w-10/12 py-32 mx-auto antialiased">
-        <div className="flex lg:flex-row md:flex-row sm:flex-col gap-24">
+        <div className="flex lg:flex-row md:flex-row sm:flex-col lg:gap-24 sm:gap-8">
           <div className="basis-7/12">
             <h3 className="font-extrabold text-cyan-950 mb-3">
               Experience Exceptional Dental Care at Our State-of-the-Art
               Practice
             </h3>
-            <p className="text-sm font-medium text-cyan-950">
+            <p className="text-sm font-bold text-cyan-950">
               At our dental practice in Fermoy, Co Cork, Ireland, we are
               committed to providing quality care, utilising modern facilities,
               and creating personalised treatment plans to meet your unique

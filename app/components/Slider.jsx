@@ -160,7 +160,7 @@ const SlideshowComponent = () => {
                 quality={75}
                 alt="Slide 1"
               />
-              <div className="absolute inset-0 bg-gradient-to-b from-slate-800/90  to-slate-800/30"></div>
+              <div className="absolute inset-0 bg-gradient-to-b from-slate-800/70  to-slate-800/10"></div>
             </div>
           </div>
           <div className="slide">
@@ -172,7 +172,7 @@ const SlideshowComponent = () => {
                 alt="Slide 1"
               />
               {/* <div className="absolute inset-0 overlay-gradient bg-slate-800 opacity-50"></div> */}
-              <div className="absolute inset-0 bg-gradient-to-b from-slate-800/90  to-slate-800/30"></div>
+              <div className="absolute inset-0 bg-gradient-to-b from-slate-800/70  to-slate-800/10"></div>
             </div>
           </div>
           <div className="slide">
@@ -184,7 +184,7 @@ const SlideshowComponent = () => {
                 alt="Slide 1"
               />
               {/* <div className="absolute inset-0 overlay-gradient bg-slate-800 opacity-50"></div> */}
-              <div className="absolute inset-0 bg-gradient-to-b from-slate-800/90  to-slate-800/30"></div>
+              <div className="absolute inset-0 bg-gradient-to-b from-slate-800/70  to-slate-800/10"></div>
             </div>
           </div>
         </div>

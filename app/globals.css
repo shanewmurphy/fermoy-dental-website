@@ -40,6 +40,9 @@ h4 {
 .desktop-nav {
   display: block;
 }
+.mobile-nav {
+  display: none;
+}
 .slides {
   width: 100%;
   height: 80vh;
@@ -154,6 +157,9 @@ h4 {
   .desktop-nav {
     display: none !important;
   }
+  .mobile-nav {
+    display: block;
+  }
 }
 
 /*-------640px------*/
@@ -161,6 +167,7 @@ h4 {
   :root {
     --h1: 1.953rem;
     --h4: 1rem;
+    --h6: 0.9rem;
   }
   h1 {
     font-size: var(--h1);
@@ -168,6 +175,9 @@ h4 {
   }
   h4 {
     font-size: var(--h4);
+  }
+  .mobile-nav {
+    display: block;
   }
 }
 
