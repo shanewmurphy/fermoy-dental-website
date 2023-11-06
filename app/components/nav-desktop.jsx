@@ -15,8 +15,8 @@ export default function NavDesktop() {
           </ul>
         </div>
         <div>
-          <button className="bg-btn py-2 px-6 text-sm text-white rounded mr-2">
-            Book Online
+          <button className="bg-btn py-2 px-4 text-sm text-white rounded mr-2">
+            Call Us 025-4557520
           </button>
         </div>
       </div>

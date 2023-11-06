@@ -7,10 +7,9 @@ export default function IntroSection() {
       <div className="w-10/12 py-32 mx-auto antialiased">
         <div className="flex lg:flex-row md:flex-row sm:flex-col lg:gap-24 sm:gap-8">
           <div className="basis-7/12">
-            <h3 className="font-extrabold text-cyan-950 mb-3">
-              Experience Exceptional Dental Care at Our State-of-the-Art
-              Practice
-            </h3>
+            <h2 className="font-extrabold text-cyan-950 mb-3">
+              Experience Exceptional Dental Care at Our Practice
+            </h2>
             <p className="text-sm font-bold text-cyan-950">
               At our dental practice in Fermoy, Co Cork, Ireland, we are
               committed to providing quality care, utilising modern facilities,
