@@ -10,7 +10,7 @@ export default function UspSection() {
             <h4 className="text-cyan-950 font-bold">
               State-of-the-art equipment
             </h4>
-            <p className="text-xs mb-6 text-cyan-950 font-medium">
+            <p className="text-sm mb-6 text-cyan-950 font-medium">
               Our dental practice is equipped with the latest technology and
               state-of-the-art equipment to ensure the highest quality of care
               for our patients.

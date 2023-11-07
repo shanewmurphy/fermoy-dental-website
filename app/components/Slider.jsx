@@ -190,15 +190,10 @@ const SlideshowComponent = () => {
         </div>
         <div className="absolute inset-0 flex items-center justify-center antialiased">
           <div className="text-white font-bold text-center">
-            <h1 className="mb-2">Fermoy Dental Practice</h1>
-            <h4 className="font-medium">
+            <h1>Fermoy Dental Practice</h1>
+            <h4 className="font-medium sm:p-4">
               Your Smile Starts Here Expert Dental <br /> Care You Can Trust
             </h4>
-            {/* <div className="mt-4">
-              <button className="bg-btn py-3 px-8 text-lg rounded-md">
-                Call Us 025 25457
-              </button>
-            </div> */}
           </div>
         </div>
       </div>

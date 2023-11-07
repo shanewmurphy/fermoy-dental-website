@@ -181,16 +181,36 @@ h4 {
 /*-------640px------*/
 @media (max-width: 40em) {
   :root {
-    --h1: 1.953rem;
-    --h4: 1rem;
-    --h6: 0.9rem;
+    --h1: 1.802rem;
+    --h2: 1.602rem;
+    --h3: 1.424rem;
+    --h4: 1.266rem;
+    --h5: 1.125rem;
+    --h6: 1rem;
   }
   h1 {
     font-size: var(--h1);
-    line-height: 0.5rem;
+    line-height: 16px;
+  }
+  h2 {
+    font-size: var(--h2);
+    line-height: 32px;
+  }
+  h3 {
+    font-size: var(--h3);
+    line-height: 32px;
   }
   h4 {
     font-size: var(--h4);
+    line-height: 28px;
+  }
+  h5 {
+    font-size: var(--h5);
+    line-height: 24px;
+  }
+  h6 {
+    font-size: var(--h6);
+    line-height: 24px;
   }
   .mobile-nav {
     display: block;
@@ -199,14 +219,6 @@ h4 {
 
 /*-------480px------*/
 @media (max-width: 30em) {
-  :root {
-    --h1: 1.563rem;
-    --h4-lineHeight: 22px;
-  }
-  h1 {
-    font-size: var(--h1);
-    line-height: var(--h1-lineHeight);
-  }
   .slides {
     width: 100%;
     height: 60%;
@@ -219,16 +231,7 @@ h4 {
 }
 /*-------352px------*/
 @media (max-width: 25em) {
-  :root {
-    --h1: 1.563rem;
-    --h1-lineHeight: 22px;
-    --h4: 1rem;
-  }
-  h1 {
-    font-size: var(--h1);
-    line-height: var(--h1-lineHeight);
-  }
-  h4 {
-    font-size: var(--h4);
+  h6 {
+    font-size: 0.8rem;
   }
 }
