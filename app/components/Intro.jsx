@@ -4,8 +4,8 @@ import Dental from "/public/DentalFacil.jpg";
 export default function IntroSection() {
   return (
     <div className="w-screen bg-lightgreen/30">
-      <div className="w-10/12 py-32 mx-auto antialiased">
-        <div className="flex lg:flex-row md:flex-row sm:flex-col lg:gap-24 sm:gap-8">
+      <div className="lg:w-10/12 xmd:w-11/12 md:w-11/12 sm:w-10/12 py-32 mx-auto antialiased">
+        <div className="flex lg:flex-row md:flex-row sm:flex-col lg:gap-24 xmid:gap-24 sm:gap-8">
           <div className="basis-7/12">
             <h2 className="font-extrabold text-cyan-950 mb-3">
               Experience Exceptional Dental Care at Our Practice

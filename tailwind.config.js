@@ -16,10 +16,12 @@ module.exports = {
         btn: "#927E70",
         green: "#113231",
         lightgreen: "#DEFFF2",
-        lightBrown: "#F4F4F4",
+        lightBrown: "#F6F6F6",
       },
       screens: {
         sm: "358px",
+        xmd: "900px",
+        md: "768px",
       },
     },
   },

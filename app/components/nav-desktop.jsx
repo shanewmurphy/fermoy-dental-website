@@ -1,6 +1,6 @@
 export default function NavDesktop() {
   return (
-    <div className="absolute top-5 left-0 right-0 desktop-nav">
+    <div className="absolute top-5 left-0 right-0 desktop-nav antialiased">
       <div className="w-10/12 mx-auto bg-slate-700/80 backdrop-opacity-70 rounded-md p-2 flex justify-between items-center">
         <div>
           <ul className="inline-flex items-center pt-1 text-white text-xs font-semibold uppercase antialiased">
@@ -15,7 +15,7 @@ export default function NavDesktop() {
           </ul>
         </div>
         <div>
-          <button className="bg-btn py-2 px-4 text-sm text-white rounded mr-2">
+          <button className="bg-btn py-2 px-4 font-semibold  text-sm text-white rounded mr-2">
             Call Us 025-4557520
           </button>
         </div>
