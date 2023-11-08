@@ -1,75 +1,89 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+"use client";
 import Image from "next/image";
-import gsap from "gsap";
+
 import HygieneImg from "/public/Hygiene.jpg";
 import FillingsImg from "/public/Fillings.jpg";
+import DentalCrownsImg from "/public/DentalCrowns.jpg";
+import BridgesImg from "/public/bridges.jpg";
 
-const Home = () => {
-  const groupRefs = useRef([]);
-
-  useEffect(() => {
-    const images = groupRefs.current;
-
-    images.forEach((image) => {
-      const heading = image.querySelector(".heading");
-      const paragraph = image.querySelector(".paragraph");
-      const icon = image.querySelector(".icon");
-
-      gsap.set([paragraph, icon], { y: 0, opacity: 0 });
-
-      image.addEventListener("mouseenter", (e) => {
-        gsap.to([paragraph, icon], {
-          y: 0,
-          opacity: 1,
-          duration: 0.9,
-          stagger: 0.3,
-          ease: "power4.inOut",
-        });
-      });
-
-      image.addEventListener("mouseleave", (e) => {
-        gsap.to([paragraph, icon], { y: 80, opacity: 0, duration: 0.5 });
-      });
-    });
-  }, []);
-
+const Treatments = () => {
   return (
-    <div>
+    <div className="w-screen bg-deepgreen">
       <div className="w-10/12 py-32 mx-auto">
+        <div>
+          <h2 className="font-extrabold text-cyan-950 mb-3 text-center">
+            Featured Treatments
+          </h2>
+        </div>
         <div className="grid lg:grid-cols-2 md:grid-row gap-16 antialiased">
-          <div
-            className="relative group"
-            ref={(el) => (groupRefs.current[0] = el)}
-          >
-            <Image
-              src={HygieneImg}
-              alt="Image 1"
-              className="object-cover w-full h-full"
-            />
-            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-40 opacity-100 transition-opacity duration-300 text-white text-center font-bold">
-              <h3 className="heading font-medium mb-2">Dental Hygiene</h3>
-              <p className="paragraph font-medium px-8">
-                We specialize in helping patients with dental hygiene and making
-                their smiles look great
-              </p>
-              <div className="icon">Link Icon</div>
-            </div>
+          <div className="relative group">
+            <figure class="effect-ruby">
+              <Image
+                src={HygieneImg}
+                alt="img02"
+                className="object-cover w-full h-full"
+              />
+              <figcaption>
+                <h2 className="font-semibold">Dental hygiene</h2>
+                <p>
+                  We specialise in helping patients with dental hygiene and
+                  making their smiles look great
+                </p>
+                <p>Link to Page</p>
+              </figcaption>
+            </figure>
           </div>
-          <div
-            className="relative group"
-            ref={(el) => (groupRefs.current[1] = el)}
-          >
-            <Image
-              src={FillingsImg}
-              alt="Image 2"
-              className="object-cover w-full h-full"
-            />
-            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-40 opacity-100 transition-opacity duration-300 text-white text-center font-bold">
-              <h3 className="heading font-medium mb-2">Dental Fillings</h3>
-              <p className="paragraph">Additional Text</p>
-              <div className="icon">Link Icon</div>
-            </div>
+          <div className="relative group">
+            <figure class="effect-ruby">
+              <Image
+                src={FillingsImg}
+                alt="img02"
+                className="object-cover w-full h-full"
+              />
+              <figcaption>
+                <h2 className="font-semibold">Fillings</h2>
+                <p>
+                  We specialise in helping patients with dental fillings and
+                  making their smiles look great.
+                </p>
+                <p>Link to Page</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div className="relative group">
+            <figure class="effect-ruby">
+              <Image
+                src={DentalCrownsImg}
+                alt="img02"
+                className="object-cover w-full h-full"
+              />
+              <figcaption>
+                <h2 className="font-semibold">Dental Crowns</h2>
+                <p>
+                  We specialise in helping patients with dental fillings and
+                  making their smiles look great.
+                </p>
+                <p>Link to Page</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div className="relative group">
+            <figure class="effect-ruby">
+              <Image
+                src={BridgesImg}
+                alt="img02"
+                className="object-cover w-full h-full"
+              />
+              <figcaption>
+                <h2 className="font-semibold">Dental Bridges</h2>
+                <p>
+                  We specialise in helping patients with dental fillings and
+                  making their smiles look great.
+                </p>
+                <p>Link to Page</p>
+              </figcaption>
+            </figure>
           </div>
         </div>
       </div>
@@ -77,4 +91,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Treatments;

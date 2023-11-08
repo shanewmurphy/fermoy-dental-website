@@ -17,6 +17,7 @@ module.exports = {
         green: "#113231",
         lightgreen: "#DEFFF2",
         lightBrown: "#F6F6F6",
+        deepgreen: "#E7EDEF",
       },
       screens: {
         sm: "358px",
