@@ -8,14 +8,14 @@ export default function UspSection() {
         <div className="flex lg:flex-row xmd:flex-row md:flex-col sm:flex-col lg:gap-24 md:gap-20 sm:gap-6">
           <div className="basis-6/12">
             <div>
-              <h2 className="font-extrabold text-cyan-950 mb-3">
+              <h2 className="font-extrabold text-cyan-950 mb-4">
                 We are committed to helping our patients
               </h2>
             </div>
             <h5 className="text-cyan-950 font-bold">
               State-of-the-art equipment
             </h5>
-            <p className="text-sm mb-6 text-cyan-950 font-medium">
+            <p className="text-sm mb-3 text-cyan-950 font-medium">
               Our dental practice is equipped with the latest technology and
               state-of-the-art equipment to ensure the highest quality of care
               for our patients.

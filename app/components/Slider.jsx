@@ -190,7 +190,7 @@ const SlideshowComponent = () => {
         </div>
         <div className="absolute inset-0 flex items-center justify-center antialiased">
           <div className="text-white font-bold text-center">
-            <h1>Fermoy Dental Centre</h1>
+            <h1 className="font-bold">Fermoy Dental Centre</h1>
             <h4 className="font-medium sm:p-4 lg:block md:block sm:hidden">
               Your Smile Starts Here Expert Dental <br /> Care You Can Trust
             </h4>

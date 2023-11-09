@@ -13,12 +13,12 @@ const Treatments = () => {
       <div className="w-10/12 py-32 mx-auto">
         <div>
           <h2 className="font-extrabold text-cyan-950 mb-3 text-center">
-            Featured Treatments
+            Dental Treatments
           </h2>
         </div>
-        <div className="grid lg:grid-cols-2 md:grid-row gap-16 antialiased">
+        <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 gap-16 antialiased">
           <div className="relative group">
-            <figure class="effect-ruby">
+            <figure className="effect-ruby">
               <Image
                 src={HygieneImg}
                 alt="img02"
@@ -35,7 +35,7 @@ const Treatments = () => {
             </figure>
           </div>
           <div className="relative group">
-            <figure class="effect-ruby">
+            <figure className="effect-ruby">
               <Image
                 src={FillingsImg}
                 alt="img02"
@@ -52,7 +52,7 @@ const Treatments = () => {
             </figure>
           </div>
           <div className="relative group">
-            <figure class="effect-ruby">
+            <figure className="effect-ruby">
               <Image
                 src={DentalCrownsImg}
                 alt="img02"
@@ -69,7 +69,7 @@ const Treatments = () => {
             </figure>
           </div>
           <div className="relative group">
-            <figure class="effect-ruby">
+            <figure className="effect-ruby">
               <Image
                 src={BridgesImg}
                 alt="img02"

@@ -3,6 +3,7 @@ import SlideshowComponent from "./components/Slider";
 import IntroSection from "./components/Intro";
 import UpsSection from "./components/Usp";
 import Treatments from "./components/Treatments";
+import Slider from "./components/Treatment-Carousel";
 export default function Home() {
   return (
     <div>
@@ -15,8 +16,11 @@ export default function Home() {
       <div>
         <UpsSection />
       </div>
-      <div>
+      <div className="lg:block md:block sm:hidden">
         <Treatments />
+      </div>
+      <div className="lg:hidden md:hidden sm:block">
+        <Slider />
       </div>
     </div>
   );
