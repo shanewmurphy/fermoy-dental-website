@@ -36,8 +36,11 @@ export default function Slider() {
   const swiperRef = useRef();
   return (
     <>
-      <div className="w-screen bg-deepgreen py-16">
+      <div className="w-screen bg-deepgreen py-20">
         <div className="lg:w-10/12 xmd:w-11/12 md:w-11/12 sm:w-10/12 mx-auto">
+          <div>
+            <h2 className="font-bold text-cyan-950 mb-2">Treatments</h2>
+          </div>
           <Swiper
             onSwiper={(swiper) => {
               swiperRef.current = swiper;
@@ -68,7 +71,9 @@ export default function Slider() {
                       alt="Dental Treatments"
                     />
                     <div className="absolute inset-0 bg-slate-800/50 rounded-lg flex items-center justify-center">
-                      <h3 className="text-white">{CarouselData.title}</h3>
+                      <h3 className="text-white font-semibold">
+                        {CarouselData.title}
+                      </h3>
                     </div>
                   </div>
                 </SwiperSlide>
