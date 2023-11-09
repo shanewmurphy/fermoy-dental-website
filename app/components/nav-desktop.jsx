@@ -16,7 +16,7 @@ export default function NavDesktop() {
         </div>
         <div>
           <button className="bg-btn py-2 px-4 font-semibold  text-sm text-white rounded mr-2">
-            Call Us 025-4557520
+            Call Us 025-31137
           </button>
         </div>
       </div>
