@@ -36,7 +36,11 @@ export default function UspSection() {
           </div>
           <div className="basis-6/12">
             <div>
-              <Image className="rounded-lg" src={USPB} />
+              <Image
+                className="rounded-lg"
+                src={USPB}
+                alt="Fermoy Dental Centre"
+              />
             </div>
           </div>
         </div>
