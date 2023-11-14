@@ -1,0 +1,11 @@
+import Image from "next/image";
+import HeroPageImg from "/public/HeroPageImg.jpg";
+export default function HeroPage() {
+  return (
+    <div>
+      <div className="w-screen">
+        <Image className="object-cover w-screen" src={HeroPageImg} />
+      </div>
+    </div>
+  );
+}

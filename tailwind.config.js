@@ -24,6 +24,9 @@ module.exports = {
         xmd: "900px",
         md: "768px",
       },
+      borderWidth: {
+        2: "1px",
+      },
     },
   },
   plugins: [],

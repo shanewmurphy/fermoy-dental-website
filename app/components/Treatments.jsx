@@ -11,10 +11,23 @@ const Treatments = () => {
   return (
     <div className="w-screen bg-deepgreen">
       <div className="w-10/12 py-32 mx-auto">
-        <div>
-          <h2 className="font-extrabold text-cyan-950 mb-3 text-center">
-            Dental Treatments
-          </h2>
+        <div className="flex justify-between mb-4">
+          <div>
+            <h2 className="font-extrabold text-cyan-950 mb-3">
+              Dental Treatments
+            </h2>
+          </div>
+          <div>
+            <button
+              className="text-red hover:before:bg-redborder-red-500 relative h-[50px] w-40 
+            overflow-hidden border border-btn rounded-md bg-white font-semibold px-3 text-btn
+            transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 
+            before:h-full before:w-0 before:bg-btn before:transition-all before:duration-500
+             hover:text-white hover:before:left-0 hover:before:w-full"
+            >
+              <span className="relative z-10">View All</span>
+            </button>
+          </div>
         </div>
         <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 gap-16 antialiased">
           <div className="relative group">
