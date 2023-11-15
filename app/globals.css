@@ -312,7 +312,7 @@ figure.effect-ruby:hover p {
     --h3: 1.424rem;
     --h4: 1.266rem;
     --h5: 1.125rem;
-    --h6: 0.8rem;
+    --h6: 0.9rem;
   }
   h1 {
     font-size: var(--h1) !important;
@@ -336,7 +336,7 @@ figure.effect-ruby:hover p {
   }
   h6 {
     font-size: var(--h6);
-    line-height: 18px;
+    line-height: 22px;
   }
   .mobile-nav {
     display: block;
