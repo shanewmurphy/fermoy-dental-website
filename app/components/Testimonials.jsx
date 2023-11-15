@@ -23,7 +23,7 @@ const TestimonialsData = [
     id: "03",
     Name: "Matt O' Sullivan",
     Review:
-      "I used to be terrified by dentists and didn't want to visit one, until i had no choice , after first appointment i have no fear anymore , it was nice and easy",
+      "I used to be terrified by dentists and didn't want to visit one, until I had no choice , after first appointment i have no fear anymore , it was nice and easy",
   },
   {
     id: "04",
@@ -82,7 +82,7 @@ export default function TestimonalCarousel() {
                 <SwiperSlide key={TestimonialsData.id}>
                   <div className="py-8 px-8 bg-white rounded-xl h-72 testimonal_card">
                     <p className="text-sm h-36 text-cyan-950">
-                      "{TestimonialsData.Review}"
+                      &quot;{TestimonialsData.Review}&quot;
                     </p>
                     <h6 className="mt-6 font-semibold text-cyan-950">
                       {TestimonialsData.Name}

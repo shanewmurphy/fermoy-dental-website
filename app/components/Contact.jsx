@@ -8,7 +8,11 @@ export default function Contact() {
         <div className="lg:w-10/12 xmd:w-11/12 md:w-11/12 sm:w-10/12 mx-auto ">
           <div className="grid lg:grid-cols-2 md:grid-col-2 sm:grid-flow-row content-center items-center text-cyan-950">
             <div className="rounded-lg lg:p-12 md:p-12">
-              <Image className="rounded-lg" src={SignImg} />
+              <Image
+                className="rounded-lg"
+                src={SignImg}
+                alt="Fermoy Dental Practice"
+              />
             </div>
 
             <div>
