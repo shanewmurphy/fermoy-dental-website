@@ -24,27 +24,14 @@ export default function Contact() {
                 Our friendly team is ready to help you achieve a healthy and
                 beautiful smile.
               </p>
-              <p className="font-bold">Mon - Fri 09:30am - 17:30pm</p>
               <h3 className="font-bold mt-2">Call Us 025 31136</h3>
+              <p className="font-bold text-sm mt-2 sm:mt-1">
+                Mon - Fri 09:30am - 17:30pm
+              </p>
             </div>
           </div>
         </div>
       </div>
-      {/* <div className="w-screen lg:py-32 md:py-24 sm:py-24 bg-lightBrown antialiased">
-        <div className="lg:w-10/12 xmd:w-11/12 md:w-11/12 sm:w-11/12 mx-auto lg:p-16 md:p-8 sm:p-6 rounded-xl">
-          <h2 className="text-cyan-950 font-extrabold text-center mb-2 antialiased">
-            Book an Appointment Today!
-          </h2>
-          <p className="text-sm font-medium text-cyan-950 text-center lg:w-8/12 mb-4 mx-auto">
-            Experience top-quality dental care in Fermoy, Co Cork, Ireland. Our
-            friendly team is ready to help you achieve a healthy and beautiful
-            smile.
-          </p>
-          <h3 className="text-center text-cyan-950 font-extrabold antialiased">
-            Call Us 025 -454547
-          </h3>
-        </div>
-      </div> */}
     </div>
   );
 }

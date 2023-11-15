@@ -2,46 +2,53 @@
 import Image from "next/image";
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import GoogleLogo from "/public/GoogleLogo.svg";
 import "swiper/css";
 // import "swiper/css/pagination";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+
 const TestimonialsData = [
   {
     id: "01",
     Name: "Andrew Finn",
     Review:
       "I used to be terrified of the dentist, but Fermoy Dental has completely changed my mind. She is so gentle and patient, and she always makes me feel comfortable",
+    StarRatingUrl: "./StarFive.svg",
   },
   {
     id: "02",
     Name: "Orla O' Connor",
     Review:
       "Excellent service from Fermoy Dental & all the team, she has really gone above & beyond in helping put me at ease & is extremely invested in her patients",
+    StarRatingUrl: "./StarFive.svg",
   },
   {
     id: "03",
     Name: "Matt O' Sullivan",
     Review:
       "I used to be terrified by dentists and didn't want to visit one, until I had no choice , after first appointment i have no fear anymore , it was nice and easy",
+    StarRatingUrl: "./StarFour.svg",
   },
   {
     id: "04",
     Name: "Anita Gleeson",
     Review:
       "Fermoy Dental has been fantastic with my children, puts them at ease & they have no fears going in",
+    StarRatingUrl: "./StarFive.svg",
   },
   {
     id: "05",
     Name: "Nathan Crowley",
     Review:
       "Excellent dentist and extremely professional. Very happy with the treatment I received. Lovely atmosphere in there. Nurses are very helpful and extremely kind. Would highly recommend this practices",
+    StarRatingUrl: "./StarFive.svg",
   },
   {
     id: "06",
     Name: "G Conroy",
     Review:
       "Very kind and caring dentist who always puts his patients first. I would highly recommend him to anyone looking for a great dentist.",
+    StarRatingUrl: "./StarFour.svg",
   },
 ];
 
@@ -52,56 +59,138 @@ export default function TestimonalCarousel() {
   const swiperRef = useRef();
   return (
     <>
-      <div className="w-screen bg-deepgreen py-20">
-        <div className="lg:w-10/12 xmd:w-11/12 md:w-11/12 sm:w-10/12 mx-auto">
-          <div>
-            <h2 className="font-bold text-center text-cyan-950 mb-6">
-              What Our Customers Say
-            </h2>
+      <div>
+        <div className="w-screen lg:block md:block sm:hidden bg-deepgreen py-20">
+          <div className="lg:w-10/12 xmd:w-11/12 md:w-11/12 sm:w-10/12 mx-auto">
+            <div>
+              <h2 className="font-bold text-center text-cyan-950 mb-6">
+                What Our Customers Say
+              </h2>
+            </div>
+            <Swiper
+              onSwiper={(swiper) => {
+                swiperRef.current = swiper;
+              }}
+              slidesPerView={"3"}
+              spaceBetween={30}
+              grabCursor={true}
+              // autoplay={{
+              //   delay: 3500,
+              //   disableOnInteraction: true,
+              // }}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+              modules={[Autoplay, Pagination, Navigation]}
+              className="mySwiper"
+            >
+              <div>
+                {TestimonialsData.map((TestimonialsData) => (
+                  <SwiperSlide key={TestimonialsData.id}>
+                    <div className="py-8 px-8 bg-white rounded-xl h-72 testimonal_card">
+                      <p className="text-sm h-36 text-cyan-950">
+                        &quot;{TestimonialsData.Review}&quot;
+                      </p>
+                      <h6 className="mt-6 font-semibold text-cyan-950">
+                        {TestimonialsData.Name}
+                      </h6>
+                      <div className="flex items-center">
+                        <Image src={GoogleLogo} alt="Google Ratings" />
+                        <span>
+                          <Image
+                            src={TestimonialsData.StarRatingUrl}
+                            className="pl-1"
+                            width={60}
+                            height={11}
+                            alt="Google Ratings"
+                          />
+                        </span>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </div>
+            </Swiper>
+            <div className="flex justify-end mt-6">
+              <div className="pr-3">
+                <button onClick={() => swiperRef.current.slidePrev()}>
+                  <ArrowLeft />
+                </button>
+              </div>
+              <div>
+                <button onClick={() => swiperRef.current.slideNext()}>
+                  <ArrowRight />
+                </button>
+              </div>
+            </div>
           </div>
-          <Swiper
-            onSwiper={(swiper) => {
-              swiperRef.current = swiper;
-            }}
-            slidesPerView={"3"}
-            spaceBetween={30}
-            grabCursor={true}
-            // autoplay={{
-            //   delay: 3500,
-            //   disableOnInteraction: true,
-            // }}
-            pagination={{
-              clickable: true,
-            }}
-            navigation={true}
-            modules={[Autoplay, Pagination, Navigation]}
-            className="mySwiper"
-          >
+        </div>
+      </div>
+      <div>
+        <div className="w-screen bg-deepgreen py-20">
+          <div className="lg:w-10/12 lg:hidden md:hidden sm:block xmd:w-11/12 md:w-11/12 sm:w-10/12 mx-auto">
             <div>
-              {TestimonialsData.map((TestimonialsData) => (
-                <SwiperSlide key={TestimonialsData.id}>
-                  <div className="py-8 px-8 bg-white rounded-xl h-72 testimonal_card">
-                    <p className="text-sm h-36 text-cyan-950">
-                      &quot;{TestimonialsData.Review}&quot;
-                    </p>
-                    <h6 className="mt-6 font-semibold text-cyan-950">
-                      {TestimonialsData.Name}
-                    </h6>
-                  </div>
-                </SwiperSlide>
-              ))}
+              <h2 className="font-bold text-center text-cyan-950 mb-6">
+                What Our Customers Say
+              </h2>
             </div>
-          </Swiper>
-          <div className="flex justify-end mt-6">
-            <div className="pr-3">
-              <button onClick={() => swiperRef.current.slidePrev()}>
-                <ArrowLeft />
-              </button>
-            </div>
-            <div>
-              <button onClick={() => swiperRef.current.slideNext()}>
-                <ArrowRight />
-              </button>
+            <Swiper
+              onSwiper={(swiper) => {
+                swiperRef.current = swiper;
+              }}
+              slidesPerView={"auto"}
+              spaceBetween={30}
+              grabCursor={true}
+              // autoplay={{
+              //   delay: 3500,
+              //   disableOnInteraction: true,
+              // }}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+              modules={[Autoplay, Pagination, Navigation]}
+              className="mySwiper"
+            >
+              <div>
+                {TestimonialsData.map((TestimonialsData) => (
+                  <SwiperSlide key={TestimonialsData.id}>
+                    <div className="py-8 px-8 bg-white rounded-xl h-72 testimonal_card">
+                      <p className="text-sm h-36 text-cyan-950">
+                        &quot;{TestimonialsData.Review}&quot;
+                      </p>
+                      <h6 className="mt-6 font-semibold text-cyan-950">
+                        {TestimonialsData.Name}
+                      </h6>
+                      <div className="flex items-center">
+                        <Image src={GoogleLogo} alt="google logo" />
+                        <span>
+                          <Image
+                            src={TestimonialsData.StarRatingUrl}
+                            className="pl-1"
+                            width={60}
+                            height={11}
+                            alt="Google Ratings"
+                          />
+                        </span>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </div>
+            </Swiper>
+            <div className="flex justify-end mt-6">
+              <div className="pr-3">
+                <button onClick={() => swiperRef.current.slidePrev()}>
+                  <ArrowLeft />
+                </button>
+              </div>
+              <div>
+                <button onClick={() => swiperRef.current.slideNext()}>
+                  <ArrowRight />
+                </button>
+              </div>
             </div>
           </div>
         </div>
