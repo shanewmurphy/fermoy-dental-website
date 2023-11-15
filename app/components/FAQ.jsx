@@ -56,26 +56,30 @@ export default function FAQ() {
           <div>
             <h3 className="text-center font-bold text-cyan-950">Common FAQs</h3>
           </div>
-          <div className="mx-auto w-8/12 rounded-2xl p-2">
+          <div className="mx-auto lg:w-8/12 rounded-2xl p-2">
             <div>
               {mappedFaqData.map((faq) => (
                 <Disclosure as="div" className="mt-4" key={faq.id}>
                   {({ open }) => (
                     <>
                       <Disclosure.Button
-                        className="flex w-full justify-between rounded-lg bg-white px-6 py-3 text-left 
-                      font-semibold text-text-cyan-950  focus:outline-none focus-visible:ring 
+                        className="flex w-full justify-between rounded-lg bg-white lg:px-6 lg:py-3 md:px-6 md:py-6 sm:py-4 sm:px-4 text-left 
+                      font-semibold text-cyan-950 focus:outline-none focus-visible:ring 
                       focus-visible:ring-cyan-950"
                       >
-                        <h5 className="text-cyan-950">{faq.question}</h5>
+                        <h6 className="text-cyan-950 font-semibold">
+                          {faq.question}
+                        </h6>
                         <ChevronUpIcon
                           className={`${
                             open ? "rotate-180 transform" : ""
                           } h-6 w-6 text-cyan-950`}
                         />
                       </Disclosure.Button>
-                      <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm font-medium text-cyan-950">
-                        {faq.answer}
+                      <Disclosure.Panel className="px-4 pt-4 pb-2">
+                        <p className="lg:text-sm md:text-sm sm:text-xs font-medium text-cyan-950">
+                          {faq.answer}
+                        </p>
                       </Disclosure.Panel>
                     </>
                   )}
