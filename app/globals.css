@@ -301,9 +301,12 @@ figure.effect-ruby:hover p {
     display: block;
   }
 }
-.swiper-slide {
-  width: 80% !important;
+
+.swiper {
+  width: 100%;
+  height: 100%;
 }
+
 /*-------640px------*/
 @media (max-width: 40em) {
   :root {
@@ -336,10 +339,13 @@ figure.effect-ruby:hover p {
   }
   h6 {
     font-size: var(--h6);
-    line-height: 22px;
+    line-height: 18px;
   }
   .mobile-nav {
     display: block;
+  }
+  .swiper-slide {
+    width: 80% !important;
   }
 }
 

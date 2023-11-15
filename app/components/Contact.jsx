@@ -15,7 +15,7 @@ export default function Contact() {
               <h2 className="font-bold text-cyan-950 mb-2 sm:mt-4">
                 Book an Appointment Today!
               </h2>
-              <p className="font-semibold text-sm mb-2">
+              <p className="font-semibold text-sm mb-6">
                 Experience top-quality dental care in Fermoy, Co Cork, Ireland.
                 Our friendly team is ready to help you achieve a healthy and
                 beautiful smile.

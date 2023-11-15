@@ -54,7 +54,7 @@ export default function FAQ() {
       <div className="w-screen py-32 bg-lightBrown antialiased">
         <div className="w-full px-4 pt-16">
           <div>
-            <h3 className="text-center font-bold text-cyan-950">Common FAQs</h3>
+            <h2 className="text-center font-bold text-cyan-950">Common FAQs</h2>
           </div>
           <div className="mx-auto lg:w-8/12 rounded-2xl p-2">
             <div>
