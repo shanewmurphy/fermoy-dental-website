@@ -84,8 +84,8 @@ export default function TestimonalCarouselMobile() {
               <div>
                 {TestimonialsData.map((TestimonialsData) => (
                   <SwiperSlide key={TestimonialsData.id}>
-                    <div className="py-8 px-8 bg-white rounded-xl h-72 testimonal_card">
-                      <p className="text-sm font-medium h-36 text-cyan-950">
+                    <div className="py-6 px-6 bg-white h-72 rounded-xl">
+                      <p className="text-sm font-normal h-40 text-cyan-950">
                         &quot;{TestimonialsData.Review}&quot;
                       </p>
                       <h6 className="mt-6 font-semibold text-cyan-950">

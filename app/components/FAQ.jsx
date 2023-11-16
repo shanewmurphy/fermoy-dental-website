@@ -6,8 +6,7 @@ export default function FAQ() {
   const faqsData = [
     {
       id: "01",
-      Question:
-        "Do I need to schedule an appointment, or do you accept walk-ins?",
+      Question: "How to schedule an appointment, or do you accept walk-ins?",
       Answer:
         "It's recommended to schedule an appointment to ensure prompt attention, but we do accommodate walk-ins for emergency only.",
     },

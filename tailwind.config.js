@@ -28,6 +28,7 @@ module.exports = {
         2: "1px",
       },
     },
+
     // fontSize: {
     //   "text-base": [
     //     "1.5rem",
