@@ -55,44 +55,44 @@ const TestimonialsData = [
 // Import Swiper styles
 import "swiper/css";
 
-export default function TestimonalCarousel() {
+export default function TestimonalCarouselMobile() {
   const swiperRef = useRef();
   return (
     <>
       <div>
-        <div className="w-screen lg:block md:block sm:hidden bg-deepgreen py-20">
-          <div className="lg:w-10/12 xmd:w-11/12 md:w-11/12 sm:w-10/12 mx-auto">
+        <div className="w-screen bg-deepgreen py-20">
+          <div className="lg:w-10/12 lg:hidden md:hidden sm:block xmd:w-11/12 md:w-11/12 sm:w-10/12 mx-auto">
             <div>
-              <h2 className="font-bold text-center text-cyan-950 mb-6">
+              <h3 className="font-bold text-center text-cyan-950 mb-6">
                 What Our Customers Say
-              </h2>
+              </h3>
             </div>
             <Swiper
               onSwiper={(swiper) => {
                 swiperRef.current = swiper;
               }}
-              slidesPerView={"3"}
+              slidesPerView={"auto"}
               spaceBetween={30}
               grabCursor={true}
               pagination={{
                 clickable: true,
               }}
               navigation={true}
-              modules={[Pagination, Navigation]}
+              modules={[Autoplay, Pagination, Navigation]}
               className="mySwiper"
             >
               <div>
                 {TestimonialsData.map((TestimonialsData) => (
                   <SwiperSlide key={TestimonialsData.id}>
                     <div className="py-8 px-8 bg-white rounded-xl h-72 testimonal_card">
-                      <p className="text-sm font-medium h-36 text-cyan-950">
+                      <p className="text-xs font-medium h-36 text-cyan-950">
                         &quot;{TestimonialsData.Review}&quot;
                       </p>
                       <h6 className="mt-6 font-semibold text-cyan-950">
                         {TestimonialsData.Name}
                       </h6>
                       <div className="flex items-center">
-                        <Image src={GoogleLogo} alt="Google Ratings" />
+                        <Image src={GoogleLogo} alt="google logo" />
                         <span>
                           <Image
                             src={TestimonialsData.StarRatingUrl}
@@ -123,7 +123,6 @@ export default function TestimonalCarousel() {
           </div>
         </div>
       </div>
-      <div></div>
     </>
   );
 }

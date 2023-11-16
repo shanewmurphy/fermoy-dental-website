@@ -28,6 +28,14 @@ module.exports = {
         2: "1px",
       },
     },
+    // fontSize: {
+    //   "text-base": [
+    //     "1.5rem",
+    //     {
+    //       lineHeight: "2rem",
+    //     },
+    //   ],
+    // },
   },
   plugins: [],
 };

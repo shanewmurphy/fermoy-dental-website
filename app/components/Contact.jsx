@@ -25,7 +25,7 @@ export default function Contact() {
                 beautiful smile.
               </p>
               <h3 className="font-bold mt-2">Call Us 025 31136</h3>
-              <p className="font-bold text-sm mt-2 sm:mt-1">
+              <p className="font-semibold text-sm mt-2 sm:mt-1">
                 Mon - Fri 09:30am - 17:30pm
               </p>
             </div>

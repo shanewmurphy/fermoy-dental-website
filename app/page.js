@@ -7,6 +7,7 @@ import Slider from "./components/Treatment-Carousel";
 import Contact from "./components/Contact";
 import FAQ from "./components/FAQ";
 import TestimonalCarousel from "./components/Testimonials";
+import TestimonalCarouselMobile from "./components/Mobile-Testimonials";
 export default function Home() {
   return (
     <div>
@@ -30,6 +31,7 @@ export default function Home() {
       </div>
       <div>
         <TestimonalCarousel />
+        <TestimonalCarouselMobile />
       </div>
       <div>
         <FAQ />

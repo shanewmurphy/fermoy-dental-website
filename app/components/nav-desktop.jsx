@@ -10,7 +10,6 @@ export default function NavDesktop() {
             <li className="pl-3">Treatments</li>
             <li className="pl-3">About Us</li>
             <li className="pl-3">The Team</li>
-            <li className="pl-3">Medical Cards</li>
             <li className="pl-3">Contact Us</li>
           </ul>
         </div>
