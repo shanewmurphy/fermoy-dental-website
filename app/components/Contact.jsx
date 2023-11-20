@@ -20,9 +20,8 @@ export default function Contact() {
                 Book an Appointment Today!
               </h2>
               <p className="font-semibold text-sm mb-6">
-                Experience top-quality dental care in Fermoy, Co Cork, Ireland.
-                Our friendly team is ready to help you achieve a healthy and
-                beautiful smile.
+                Experience top-quality dental care. Our friendly team is ready
+                to help you achieve a healthy and beautiful smile.
               </p>
               <h3 className="font-bold mt-2">Call Us 025 31136</h3>
               <p className="font-semibold text-sm mt-2 sm:mt-1">

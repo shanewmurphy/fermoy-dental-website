@@ -1,12 +1,16 @@
+import Link from "next/link";
+
 export default function NavDesktop() {
   return (
     <div className="absolute top-5 left-0 right-0 desktop-nav antialiased">
       <div className="w-10/12 mx-auto bg-white backdrop-opacity-70 rounded-md p-2 flex justify-between items-center">
         <div>
-          <ul className="inline-flex items-center pt-1 text-cyan-950 text-xs font-bold uppercase antialiased">
-            <li className="pl-3">
-              <LogoDark />
-            </li>
+          <ul className="inline-flex items-center pt-1 text-cyan-900 text-xs font-bold uppercase antialiased">
+            <Link href="/">
+              <li className="pl-3">
+                <LogoDark />
+              </li>
+            </Link>
             <li className="pl-3">Treatments</li>
             <li className="pl-3">About Us</li>
             <li className="pl-3">The Team</li>

@@ -44,6 +44,7 @@ export default function IntroSection() {
               className="rounded-lg w-full"
               src={Dental}
               alt="Fermoy Dental"
+              priority
             />
           </div>
         </div>

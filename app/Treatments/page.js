@@ -170,11 +170,11 @@ export default function TreatmentsPage() {
                 <strong>Full dentures</strong> are used when all of the teeth in
                 a single arch—the maxillary (upper) or mandibular (lower) arch
                 or in both arches are missing.
-                <p className="mt-1">
-                  <strong>Partial dentures</strong> are used when some natural
-                  teeth remain. They are attached to the remaining teeth with
-                  metal clasps or wires and can be removed for cleaning.
-                </p>
+              </p>
+              <p className="mt-1">
+                <strong>Partial dentures</strong> are used when some natural
+                teeth remain. They are attached to the remaining teeth with
+                metal clasps or wires and can be removed for cleaning.
               </p>
             </div>
           </div>

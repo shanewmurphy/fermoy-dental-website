@@ -69,6 +69,7 @@ export default function Slider() {
                       width={400}
                       height={500}
                       alt="Dental Treatments"
+                      priority
                     />
                     <div className="absolute inset-0 bg-slate-800/50 rounded-lg flex items-center justify-center">
                       <h3 className="text-white font-semibold">
