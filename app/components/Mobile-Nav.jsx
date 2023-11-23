@@ -65,7 +65,7 @@ export default function MobileNav() {
                               <span className="absolute -inset-2.5" />
                               <span className="sr-only">Close</span>
                               <XMarkIcon
-                                className="h-6 w-6"
+                                className="h-8 w-8 text-cyan-900"
                                 aria-hidden="true"
                               />
                             </button>
@@ -85,12 +85,31 @@ export default function MobileNav() {
                               </Link>
                               <Link
                                 href="About"
-                                className="text-2xl block font-semibold"
+                                className="text-2xl block font-semibold mb-6"
                               >
                                 About Us
                               </Link>
+                              <Link
+                                href="About"
+                                className="text-2xl block font-semibold mb-6"
+                              >
+                                The Team
+                              </Link>
+                              <Link
+                                href="Contact"
+                                className="text-2xl block font-semibold mb-6"
+                              >
+                                Contact Us
+                              </Link>
                             </div>
-                            <div className="grid content-end">BBB</div>
+                            <div className="grid h-72 content-end">
+                              <div className="bg-lightBrown m-6 p-8 rounded-lg">
+                                <h4 className="font-semibold">
+                                  Book an Appointment
+                                </h4>
+                                <h5 className="font-semibold">025 - 31137</h5>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </Dialog.Panel>
