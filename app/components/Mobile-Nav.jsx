@@ -104,10 +104,10 @@ export default function MobileNav() {
                             </div>
                             <div className="grid h-72 content-end">
                               <div className="bg-lightBrown m-6 p-8 rounded-lg">
-                                <h4 className="font-semibold">
+                                <h5 className="font-semibold mb-2">
                                   Book an Appointment
-                                </h4>
-                                <h5 className="font-semibold">025 - 31137</h5>
+                                </h5>
+                                <h4 className="font-semibold">025 - 31137</h4>
                               </div>
                             </div>
                           </div>
