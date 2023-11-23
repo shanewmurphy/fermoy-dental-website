@@ -253,7 +253,7 @@ figure.effect-ruby:hover p {
   transform: translate3d(0, 0, 0) scale(1);
 }
 .mobile-nav-container {
-  height: 100vh;
+  height: 100svh;
 }
 @media (max-width: 768px) {
   :root {

@@ -79,13 +79,13 @@ export default function MobileNav() {
                             <div className="py-8 px-8">
                               <Link
                                 href="Treatments"
-                                className="text-3xl block font-semibold mb-6"
+                                className="text-2xl block font-semibold mb-6"
                               >
                                 Treatments
                               </Link>
                               <Link
                                 href="About"
-                                className="text-3xl block font-semibold"
+                                className="text-2xl block font-semibold"
                               >
                                 About Us
                               </Link>
