@@ -11,14 +11,42 @@ export default function NavDesktop() {
                 <LogoDark />
               </li>
             </Link>
-            <li className="pl-3">Treatments</li>
-            <li className="pl-3">About Us</li>
-            <li className="pl-3">The Team</li>
-            <li className="pl-3">Contact Us</li>
+            <Link href="Treatments" className="pl-3">
+              <span
+                className="text-xs relative after:bg-cyan-900 after:absolute after:h-px pb-1 after:w-0 after:bottom-0 
+              after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
+              >
+                Treatments
+              </span>
+            </Link>
+            <Link href="About" className="pl-3">
+              <span
+                className="text-xs relative after:bg-cyan-900 after:absolute after:h-px pb-1 after:w-0 after:bottom-0 
+              after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
+              >
+                About Us
+              </span>
+            </Link>
+            <Link href="About" className="pl-3">
+              <span
+                className="text-xs relative after:bg-cyan-900 after:absolute after:h-px pb-1 after:w-0 after:bottom-0 
+              after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
+              >
+                The Team
+              </span>
+            </Link>
+            <Link href="Contact" className="pl-3">
+              <span
+                className="text-xs relative after:bg-cyan-900 after:absolute after:h-px pb-1 after:w-0 after:bottom-0 
+              after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
+              >
+                Contact Us
+              </span>
+            </Link>
           </ul>
         </div>
         <div>
-          <button className="bg-btn py-2 px-4 font-semibold  text-sm text-white rounded mr-2">
+          <button className="bg-cyan-950 py-2 px-4 font-semibold  text-sm text-white rounded mr-2">
             Call Us 025-31137
           </button>
         </div>

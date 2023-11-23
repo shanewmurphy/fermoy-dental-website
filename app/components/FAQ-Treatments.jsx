@@ -72,7 +72,9 @@ function FAQTreatments() {
                       font-semibold text-text-cyan-950  focus:outline-none focus-visible:ring 
                       focus-visible:ring-cyan-950"
                 >
-                  <h6>{faq.Question}</h6>
+                  <p className="text-sm text-cyan-950 font-semibold antialiased">
+                    {faq.Question}
+                  </p>
                   <ChevronUpIcon
                     className={`${
                       open ? "rotate-180 transform" : ""

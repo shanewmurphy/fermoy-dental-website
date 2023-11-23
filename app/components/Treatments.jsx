@@ -20,9 +20,9 @@ const Treatments = () => {
           <div>
             <button
               className="text-red hover:before:bg-redborder-red-500 relative h-[50px] w-40 
-            overflow-hidden border border-btn rounded-md bg-white font-semibold px-3 text-btn
+            overflow-hidden border border-cyan-950 rounded-md bg-white font-semibold px-3 text-cyan-950
             transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 
-            before:h-full before:w-0 before:bg-btn before:transition-all before:duration-500
+            before:h-full before:w-0 before:bg-cyan-950 before:transition-all before:duration-500
              hover:text-white hover:before:left-0 hover:before:w-full"
             >
               <span className="relative z-10">View All</span>

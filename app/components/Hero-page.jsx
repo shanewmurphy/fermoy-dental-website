@@ -8,6 +8,7 @@ export default function HeroPage() {
           className="object-cover w-screen"
           src={HeroPageImg}
           alt="Fermoy Dental Practice"
+          priority={true}
         />
       </div>
     </div>

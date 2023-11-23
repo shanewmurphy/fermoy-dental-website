@@ -1,5 +1,6 @@
 import HeroPage from "../components/Hero-page";
 import FaqsTreatments from "../components/FAQ-Treatments";
+import Contact from "../components/Contact";
 export default function TreatmentsPage() {
   return (
     <div>
@@ -192,7 +193,7 @@ export default function TreatmentsPage() {
               </ul>
             </div>
             <div className="basis-3/5">
-              <p className="font-medium text-sm">
+              <div className="font-medium text-sm">
                 <strong>Braces</strong> are the most common type of orthodontic
                 treatment. They use metal brackets and wires to move the teeth
                 into the desired position
@@ -205,7 +206,7 @@ export default function TreatmentsPage() {
                   <strong>Retainers</strong> are used to keep the teeth in their
                   new position after orthodontic treatment is complete
                 </p>
-              </p>
+              </div>
             </div>
           </div>
           <div className="flex border-b-2 border-gray-300 lg:items-center lg:flex-row md:flex-row sm:flex-col lg:gap-8 md:gap-8 sm:gap-4 py-8">
@@ -293,6 +294,9 @@ export default function TreatmentsPage() {
             The Treatment Benefit Section of the Department of Social Welfare
             manages the Scheme and you can call them on LoCall: 1890 400 400.
           </p>
+        </div>
+        <div>
+          <Contact />
         </div>
         <div className="w-10/12 mx-auto text-cyan-950 mt-32 antialiased">
           <FaqsTreatments />
