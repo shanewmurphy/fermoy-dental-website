@@ -2,11 +2,11 @@
 import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
-
+import Link from "next/link";
 export default function MobileNav() {
   const [open, setOpen] = useState(false);
   return (
-    <div className="absolute top-5 left-0 right-0 mobile-nav antialiased">
+    <div className="absolute top-5 left-0  right-0 mobile-nav antialiased">
       <div className="w-10/12 mx-auto flex justify-between items-center bg-white/90 py-2 px-4 backdrop-opacity-70 rounded-md">
         <div>
           <LogoMobile />
@@ -73,12 +73,24 @@ export default function MobileNav() {
                         </Transition.Child>
                         <div className="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl">
                           <div className="px-4 sm:px-6">
-                            <Dialog.Title className="text-base font-semibold leading-6 text-gray-900">
-                              Menu Links
-                            </Dialog.Title>
+                            <Dialog.Title className="text-base font-semibold leading-6 text-gray-900"></Dialog.Title>
                           </div>
-                          <div className="relative mt-6 flex-1 px-4 sm:px-6">
-                            {/* Your content */}
+                          <div className="relative grid grid-rows-2 gap-4 mobile-nav-container">
+                            <div className="py-8 px-8">
+                              <Link
+                                href="Treatments"
+                                className="text-3xl block font-semibold mb-6"
+                              >
+                                Treatments
+                              </Link>
+                              <Link
+                                href="About"
+                                className="text-3xl block font-semibold"
+                              >
+                                About Us
+                              </Link>
+                            </div>
+                            <div className="grid content-end">BBB</div>
                           </div>
                         </div>
                       </Dialog.Panel>
