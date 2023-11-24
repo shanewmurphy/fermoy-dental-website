@@ -9,7 +9,9 @@ export default function MobileNav() {
     <div className="absolute top-5 left-0  right-0 mobile-nav antialiased">
       <div className="w-10/12 mx-auto flex justify-between items-center bg-white/90 py-2 px-4 backdrop-opacity-70 rounded-md">
         <div>
-          <LogoMobile />
+          <Link href="/">
+            <LogoMobile />
+          </Link>
         </div>
         <div>
           <div>
@@ -71,12 +73,18 @@ export default function MobileNav() {
                             </button>
                           </div>
                         </Transition.Child>
-                        <div className="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl">
+                        <div className="flex h-full flex-col overflow-y-scroll bg-lightBrown py-6 shadow-xl">
                           <div className="px-4 sm:px-6">
                             <Dialog.Title className="text-base font-semibold leading-6 text-gray-900"></Dialog.Title>
                           </div>
                           <div className="relative grid grid-rows-2 gap-4 mobile-nav-container">
                             <div className="py-8 px-8">
+                              <Link
+                                href="/"
+                                className="text-2xl block font-semibold mb-6"
+                              >
+                                Home
+                              </Link>
                               <Link
                                 href="Treatments"
                                 className="text-2xl block font-semibold mb-6"
@@ -102,8 +110,8 @@ export default function MobileNav() {
                                 Contact Us
                               </Link>
                             </div>
-                            <div className="grid h-72 content-end">
-                              <div className="bg-lightBrown m-6 p-8 rounded-lg">
+                            <div className="grid">
+                              <div className="bg-white m-6 p-8 rounded-lg">
                                 <h5 className="font-semibold mb-2">
                                   Book an Appointment
                                 </h5>
