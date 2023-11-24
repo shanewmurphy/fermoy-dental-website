@@ -79,7 +79,7 @@ export default function MobileNav() {
                           <div className="px-4 sm:px-6">
                             <Dialog.Title className="text-base font-semibold leading-6 text-gray-900"></Dialog.Title>
                           </div>
-                          <div className="relative grid grid-rows-2 gap-4">
+                          <div className="relative gap-4">
                             <div className="py-8 px-8">
                               <Link
                                 href="/"
@@ -111,7 +111,7 @@ export default function MobileNav() {
                               >
                                 Contact Us
                               </Link>
-                              <div className="mt-16">
+                              <div className="mt-8">
                                 <div className="bg-white py-4 px-4 rounded-lg">
                                   <Image
                                     src={SignImg}
@@ -132,7 +132,6 @@ export default function MobileNav() {
                                 </div>
                               </div>
                             </div>
-                            <div className="grid p-8"></div>
                           </div>
                         </div>
                       </Dialog.Panel>
