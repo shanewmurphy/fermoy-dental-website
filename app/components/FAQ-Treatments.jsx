@@ -62,7 +62,7 @@ function FAQTreatments() {
   return (
     <div className="FAQ-Treatments">
       <h3 className="text-center font-bold">Common Treatments FAQs</h3>
-      <div className="mx-auto w-10/12 rounded-2xl p-2">
+      <div className="lg:w-7/12 md:w-7/12 sm:w-11/12 mx-auto rounded-2xl p-2">
         {faqsTreatmentsData.map((faq) => (
           <Disclosure as="div" className="mt-4" key={faq.id}>
             {({ open }) => (
@@ -75,11 +75,13 @@ function FAQTreatments() {
                   <p className="text-sm text-cyan-950 font-semibold antialiased">
                     {faq.Question}
                   </p>
-                  <ChevronUpIcon
-                    className={`${
-                      open ? "rotate-180 transform" : ""
-                    } h-6 w-6 text-cyan-950`}
-                  />
+                  <div>
+                    <ChevronUpIcon
+                      className={`${
+                        open ? "rotate-180 transform" : ""
+                      } h-6 w-6 text-cyan-950`}
+                    />
+                  </div>
                 </Disclosure.Button>
                 <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm font-medium text-cyan-950">
                   {faq.Answer}

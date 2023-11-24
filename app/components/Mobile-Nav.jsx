@@ -80,7 +80,7 @@ export default function MobileNav() {
                             <Dialog.Title className="text-base font-semibold leading-6 text-gray-900"></Dialog.Title>
                           </div>
                           <div className="relative gap-4">
-                            <div className="py-8 px-8">
+                            <div className="py-8 px-8 text-cyan-950">
                               <Link
                                 href="/"
                                 className="text-2xl block font-semibold mb-4"
@@ -111,16 +111,14 @@ export default function MobileNav() {
                                     src={SignImg}
                                     className="rounded-md"
                                     alt="Fermoy Dental Centre"
-                                    priority={true}
+                                    placeholder="blur"
+                                    priority
                                   />
                                   <div>
-                                    <h5 className="font-semibold text-cyan-950 mt-2">
-                                      Book an Appointment Today!
-                                    </h5>
-                                    <h4 className="font-bold text-cyan-950 mt-1">
+                                    <h4 className="font-bold text-cyan-950 mt-3">
                                       Call Us 025 31136
                                     </h4>
-                                    <p className="font-semibold text-cyan-950 text-xs mt-2 sm:mt-1">
+                                    <p className="font-semibold text-cyan-950 text-xs">
                                       Mon - Fri 09:30am - 17:30pm
                                     </p>
                                   </div>

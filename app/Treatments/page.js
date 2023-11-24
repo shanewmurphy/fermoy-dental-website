@@ -298,7 +298,7 @@ export default function TreatmentsPage() {
         <div>
           <Contact />
         </div>
-        <div className="w-10/12 mx-auto text-cyan-950 mt-32 antialiased">
+        <div className="text-cyan-950 mt-32 antialiased">
           <FaqsTreatments />
         </div>
       </div>

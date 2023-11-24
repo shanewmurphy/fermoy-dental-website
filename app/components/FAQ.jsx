@@ -69,11 +69,13 @@ export default function FAQ() {
                         <p className="text-cyan-950 text-sm font-semibold antialiased">
                           {faq.question}
                         </p>
-                        <ChevronUpIcon
-                          className={`${
-                            open ? "rotate-180 transform" : ""
-                          } h-6 w-6  text-cyan-950`}
-                        />
+                        <div>
+                          <ChevronUpIcon
+                            className={`${
+                              open ? "rotate-180 transform" : ""
+                            } h-6 w-6  text-cyan-950`}
+                          />
+                        </div>
                       </Disclosure.Button>
                       <Disclosure.Panel className="px-4 pt-4 pb-2">
                         <p className="text-sm font-medium text-cyan-950">

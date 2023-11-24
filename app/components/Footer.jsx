@@ -84,7 +84,41 @@ export default function Footer() {
           <div>Made by Shane</div>
         </div>
       </div>
-      <div className="w-screen lg:hidden  bg-cyan-950">AA</div>
+      <div className="w-screen lg:hidden  bg-cyan-950">
+        <div className="flex flex-col py-8 px-8">
+          <div className="">
+            <div className="w-20 mb-1">
+              <Image src={FooterLogo} alt="Logo" />
+            </div>
+            <h6 className="font-medium text-white">Femory Dental Centre</h6>
+            <address className="text-xs text-white font-medium antialiased">
+              66 Lower Patrick Street,
+              <br /> Fermoy, <br /> Co Cork, <br /> Ireland.
+            </address>
+            <div className="mt-2 flex items-center">
+              <span className="font-semibold text-white text-lg">
+                025-31137
+              </span>
+            </div>
+            <div className="flex items-center">
+              <span className="font-medium text-white text-xs underline">
+                hello@femorydentalcentre.com
+              </span>
+            </div>
+          </div>
+          <div className="mt-8">
+            <div className="border-t-2 border-b-2 border-cyan-800">
+              <h6 className="py-2 text-white">Treatments</h6>
+            </div>
+            <div className="border-b-2 border-cyan-800">
+              <h6 className="py-2 text-white">About Us</h6>
+            </div>
+            <div className="border-b-2 border-cyan-800">
+              <h6 className="py-2 text-white">Contact Us</h6>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
