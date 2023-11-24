@@ -100,12 +100,6 @@ export default function MobileNav() {
                                 About Us
                               </Link>
                               <Link
-                                href="About"
-                                className="text-2xl block font-semibold mb-4"
-                              >
-                                The Team
-                              </Link>
-                              <Link
                                 href="Contact"
                                 className="text-2xl block font-semibold mb-4"
                               >
@@ -120,13 +114,13 @@ export default function MobileNav() {
                                     priority={true}
                                   />
                                   <div>
-                                    <h4 className="font-bold text-cyan-950 mb-2 sm:mt-4">
+                                    <h5 className="font-semibold text-cyan-950 mt-2">
                                       Book an Appointment Today!
-                                    </h4>
-                                    <h4 className="font-bold mt-2">
+                                    </h5>
+                                    <h4 className="font-bold text-cyan-950 mt-1">
                                       Call Us 025 31136
                                     </h4>
-                                    <p className="font-semibold text-xs mt-2 sm:mt-1">
+                                    <p className="font-semibold text-cyan-950 text-xs mt-2 sm:mt-1">
                                       Mon - Fri 09:30am - 17:30pm
                                     </p>
                                   </div>
