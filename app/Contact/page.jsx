@@ -14,12 +14,12 @@ export default function ContactPage() {
         <div className="w-10/12 mx-auto text-cyan-950">
           <div>
             <h2 className="text-center font-bold mb-1">Contact Information</h2>
-            <h5 className="text-center">
+            <h6 className="text-center font-medium">
               For any inquiries, please reach out to us.
-            </h5>
+            </h6>
           </div>
-          <div className="grid grid-cols-2 gap-8 mt-16">
-            <div className="p-8">
+          <div className="grid lg:grid-cols-2 gap-8 mt-16">
+            <div className="lg:p-8">
               <h4 className="font-bold mb-1">Femory Dental Centre</h4>
               <address className="text-sm font-medium">
                 66 Lower Patrick Street,
@@ -36,7 +36,7 @@ export default function ContactPage() {
                 </span>
               </div>
             </div>
-            <div className="p-8">
+            <div className="lg:p-8">
               <Image
                 className="rounded-xl"
                 src={SignImg}

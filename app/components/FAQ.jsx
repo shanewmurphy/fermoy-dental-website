@@ -66,7 +66,7 @@ export default function FAQ() {
                       font-semibold text-cyan-950 focus:outline-none focus-visible:ring 
                       focus-visible:ring-cyan-950"
                       >
-                        <p className="text-cyan-950 text-sm font-semibold antialiased">
+                        <p className="text-cyan-950 text-sm sm:pr-4 font-semibold antialiased">
                           {faq.question}
                         </p>
                         <div>

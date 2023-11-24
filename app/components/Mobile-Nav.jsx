@@ -106,7 +106,7 @@ export default function MobileNav() {
                                 Contact Us
                               </Link>
                               <div className="mt-8">
-                                <div className="bg-white py-4 px-4 rounded-lg">
+                                <div className="">
                                   <Image
                                     src={SignImg}
                                     className="rounded-md"

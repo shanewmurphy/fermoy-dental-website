@@ -101,7 +101,7 @@ export default function Footer() {
               </span>
             </div>
             <div className="flex items-center">
-              <span className="font-medium text-white text-xs underline">
+              <span className="font-medium text-white text-sm underline">
                 hello@femorydentalcentre.com
               </span>
             </div>
