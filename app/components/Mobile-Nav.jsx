@@ -83,31 +83,31 @@ export default function MobileNav() {
                             <div className="py-8 px-8">
                               <Link
                                 href="/"
-                                className="text-2xl block font-semibold mb-6"
+                                className="text-2xl block font-semibold mb-4"
                               >
                                 Home
                               </Link>
                               <Link
                                 href="Treatments"
-                                className="text-2xl block font-semibold mb-6"
+                                className="text-2xl block font-semibold mb-4"
                               >
                                 Treatments
                               </Link>
                               <Link
                                 href="About"
-                                className="text-2xl block font-semibold mb-6"
+                                className="text-2xl block font-semibold mb-4"
                               >
                                 About Us
                               </Link>
                               <Link
                                 href="About"
-                                className="text-2xl block font-semibold mb-6"
+                                className="text-2xl block font-semibold mb-4"
                               >
                                 The Team
                               </Link>
                               <Link
                                 href="Contact"
-                                className="text-2xl block font-semibold mb-6"
+                                className="text-2xl block font-semibold mb-4"
                               >
                                 Contact Us
                               </Link>
@@ -117,6 +117,7 @@ export default function MobileNav() {
                                     src={SignImg}
                                     className="rounded-md"
                                     alt="Fermoy Dental Centre"
+                                    priority={true}
                                   />
                                   <div>
                                     <h4 className="font-bold text-cyan-950 mb-2 sm:mt-4">
