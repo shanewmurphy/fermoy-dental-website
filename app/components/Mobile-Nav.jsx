@@ -79,7 +79,7 @@ export default function MobileNav() {
                           <div className="px-4 sm:px-6">
                             <Dialog.Title className="text-base font-semibold leading-6 text-gray-900"></Dialog.Title>
                           </div>
-                          <div className="relative grid grid-rows-2 gap-4 mobile-nav-container">
+                          <div className="relative grid grid-rows-2 gap-4">
                             <div className="py-8 px-8">
                               <Link
                                 href="/"
@@ -111,31 +111,28 @@ export default function MobileNav() {
                               >
                                 Contact Us
                               </Link>
-                            </div>
-                            <div className="grid p-8">
-                              <div className="bg-white py-4 px-4 rounded-lg">
-                                <Image
-                                  src={SignImg}
-                                  alt="Fermoy Dental Centre"
-                                />
-                                <div>
-                                  <h4 className="font-bold text-cyan-950 mb-2 sm:mt-4">
-                                    Book an Appointment Today!
-                                  </h4>
-                                  <p className="font-medium text-xs mb-6">
-                                    Experience top-quality dental care. Our
-                                    friendly team is ready to help you achieve a
-                                    healthy and beautiful smile.
-                                  </p>
-                                  <h4 className="font-bold mt-2">
-                                    Call Us 025 31136
-                                  </h4>
-                                  <p className="font-semibold text-sm mt-2 sm:mt-1">
-                                    Mon - Fri 09:30am - 17:30pm
-                                  </p>
+                              <div className="mt-16">
+                                <div className="bg-white py-4 px-4 rounded-lg">
+                                  <Image
+                                    src={SignImg}
+                                    className="rounded-md"
+                                    alt="Fermoy Dental Centre"
+                                  />
+                                  <div>
+                                    <h4 className="font-bold text-cyan-950 mb-2 sm:mt-4">
+                                      Book an Appointment Today!
+                                    </h4>
+                                    <h4 className="font-bold mt-2">
+                                      Call Us 025 31136
+                                    </h4>
+                                    <p className="font-semibold text-xs mt-2 sm:mt-1">
+                                      Mon - Fri 09:30am - 17:30pm
+                                    </p>
+                                  </div>
                                 </div>
                               </div>
                             </div>
+                            <div className="grid p-8"></div>
                           </div>
                         </div>
                       </Dialog.Panel>
