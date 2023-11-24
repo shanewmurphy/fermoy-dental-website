@@ -1,8 +1,10 @@
 "use client";
+import Image from "next/image";
 import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import SignImg from "/public/Sign.webp";
 export default function MobileNav() {
   const [open, setOpen] = useState(false);
   return (
@@ -110,12 +112,28 @@ export default function MobileNav() {
                                 Contact Us
                               </Link>
                             </div>
-                            <div className="grid">
-                              <div className="bg-white m-6 p-8 rounded-lg">
-                                <h5 className="font-semibold mb-2">
-                                  Book an Appointment
-                                </h5>
-                                <h4 className="font-semibold">025 - 31137</h4>
+                            <div className="grid p-8">
+                              <div className="bg-white py-4 px-4 rounded-lg">
+                                <Image
+                                  src={SignImg}
+                                  alt="Fermoy Dental Centre"
+                                />
+                                <div>
+                                  <h4 className="font-bold text-cyan-950 mb-2 sm:mt-4">
+                                    Book an Appointment Today!
+                                  </h4>
+                                  <p className="font-medium text-xs mb-6">
+                                    Experience top-quality dental care. Our
+                                    friendly team is ready to help you achieve a
+                                    healthy and beautiful smile.
+                                  </p>
+                                  <h4 className="font-bold mt-2">
+                                    Call Us 025 31136
+                                  </h4>
+                                  <p className="font-semibold text-sm mt-2 sm:mt-1">
+                                    Mon - Fri 09:30am - 17:30pm
+                                  </p>
+                                </div>
                               </div>
                             </div>
                           </div>
