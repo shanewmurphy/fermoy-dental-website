@@ -18,7 +18,7 @@ export default function Footer() {
             </address>
             <div className="mt-2 flex items-center">
               <span className="font-semibold text-white text-lg">
-                025-31137
+                025-31136
               </span>
             </div>
             <div className="flex items-center">
@@ -91,7 +91,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="w-screen lg:hidden  bg-cyan-950">
+      <div className="w-screen lg:hidden bg-cyan-950">
         <div className="flex flex-col py-8 px-8">
           <div className="">
             <div className="w-20 mb-1">
@@ -131,6 +131,13 @@ export default function Footer() {
                 <h6 className="py-2 text-white">Contact Us</h6>
               </Link>
             </div>
+          </div>
+          <div className="flex justify-end mt-4">
+            <Link target="blank" href="https://shanemurphy.design">
+              <span className="text-xs font-medium text-white">
+                Made by Shane
+              </span>
+            </Link>
           </div>
         </div>
       </div>
