@@ -27,7 +27,7 @@ export default function ContactPage() {
               </address>
               <div className="mt-8 flex items-center">
                 <Image src={PhoneIcon} alt="Phone Icon" />
-                <span className="pl-2 font-semibold text-xl">025-31137</span>
+                <span className="pl-2 font-semibold text-xl">025-31136</span>
               </div>
               <div className="mt-4 flex items-center">
                 <Image src={EmailIcon} alt="Email Icon" />

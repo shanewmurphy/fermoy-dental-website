@@ -104,7 +104,7 @@ export default function Footer() {
             </address>
             <div className="mt-2 flex items-center">
               <span className="font-semibold text-white text-lg">
-                025-31137
+                025-31136
               </span>
             </div>
             <div className="flex items-center">
@@ -117,13 +117,19 @@ export default function Footer() {
           </div>
           <div className="mt-8">
             <div className="border-t-2 border-b-2 border-cyan-800">
-              <h6 className="py-2 text-white">Treatments</h6>
+              <Link href="Treatments">
+                <h6 className="py-2 text-white">Treatments</h6>
+              </Link>
             </div>
             <div className="border-b-2 border-cyan-800">
-              <h6 className="py-2 text-white">About Us</h6>
+              <Link href="Treatments">
+                <h6 className="py-2 text-white">About Us</h6>
+              </Link>
             </div>
             <div className="border-b-2 border-cyan-800">
-              <h6 className="py-2 text-white">Contact Us</h6>
+              <Link href="Treatments">
+                <h6 className="py-2 text-white">Contact Us</h6>
+              </Link>
             </div>
           </div>
         </div>

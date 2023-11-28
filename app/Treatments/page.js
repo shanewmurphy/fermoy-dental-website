@@ -172,7 +172,7 @@ export default function TreatmentsPage() {
                 a single arch—the maxillary (upper) or mandibular (lower) arch
                 or in both arches are missing.
               </p>
-              <p className="mt-1">
+              <p className="font-medium text-sm mt-1">
                 <strong>Partial dentures</strong> are used when some natural
                 teeth remain. They are attached to the remaining teeth with
                 metal clasps or wires and can be removed for cleaning.
