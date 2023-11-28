@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -11,21 +12,25 @@ const CarouselData = [
     id: "01",
     imgUrl: "/carousel/img_01.jpg",
     title: "Dental Hygiene",
+    URL: "Treatments",
   },
   {
     id: "02",
     imgUrl: "/carousel/img_02.jpg",
     title: "Dental fillings",
+    URL: "Treatments",
   },
   {
     id: "03",
     imgUrl: "/carousel/img_03.jpg",
     title: "Dental Crowns",
+    URL: "Treatments",
   },
   {
     id: "04",
     imgUrl: "/carousel/img_04.jpg",
     title: "Dental Bridges",
+    URL: "Treatments",
   },
 ];
 
@@ -63,19 +68,21 @@ export default function Slider() {
               {CarouselData.map((CarouselData) => (
                 <SwiperSlide key={CarouselData.id}>
                   <div>
-                    <Image
-                      className="rounded-lg"
-                      src={CarouselData.imgUrl}
-                      width={400}
-                      height={500}
-                      alt="Dental Treatments"
-                      priority
-                    />
-                    <div className="absolute inset-0 bg-slate-800/50 rounded-lg flex items-center justify-center">
-                      <h3 className="text-white font-semibold">
-                        {CarouselData.title}
-                      </h3>
-                    </div>
+                    <Link href={CarouselData.URL}>
+                      <Image
+                        className="rounded-lg"
+                        src={CarouselData.imgUrl}
+                        width={400}
+                        height={500}
+                        alt="Dental Treatments"
+                        priority
+                      />
+                      <div className="absolute inset-0 bg-slate-800/50 rounded-lg flex items-center justify-center">
+                        <h3 className="text-white font-semibold">
+                          {CarouselData.title}
+                        </h3>
+                      </div>
+                    </Link>
                   </div>
                 </SwiperSlide>
               ))}
