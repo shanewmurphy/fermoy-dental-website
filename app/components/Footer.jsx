@@ -1,6 +1,7 @@
 import Image from "next/image";
 import FooterLogo from "/public/FooterLogo.svg";
 import Link from "next/link";
+
 export default function Footer() {
   return (
     <div>
@@ -21,9 +22,9 @@ export default function Footer() {
               </span>
             </div>
             <div className="flex items-center">
-              <span className="font-medium text-white text-xs underline">
+              <button className="font-medium text-white text-xs underline">
                 hello@femorydentalcentre.com
-              </span>
+              </button>
             </div>
           </div>
           <div className="grow">
@@ -81,7 +82,13 @@ export default function Footer() {
               {new Date().getFullYear()}
             </span>
           </div>
-          <div>Made by Shane</div>
+          <div>
+            <p className="text-xs text-white mt-2">
+              <Link target="blank" href="https://shanemurphy.design">
+                Made by Shane
+              </Link>
+            </p>
+          </div>
         </div>
       </div>
       <div className="w-screen lg:hidden  bg-cyan-950">
@@ -102,7 +109,9 @@ export default function Footer() {
             </div>
             <div className="flex items-center">
               <span className="font-medium text-white text-sm underline">
-                hello@femorydentalcentre.com
+                <a href="mailto:hello@femorydentalcentre.com">
+                  hello@femorydentalcentre.com
+                </a>
               </span>
             </div>
           </div>

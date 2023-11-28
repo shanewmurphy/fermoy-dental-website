@@ -115,7 +115,7 @@ export default function MobileNav() {
                                     priority
                                   />
                                   <div>
-                                    <h4 className="font-bold text-cyan-950 mt-3">
+                                    <h4 className="font-bold text-2xl text-cyan-950 mt-3">
                                       Call Us 025 31136
                                     </h4>
                                     <p className="font-semibold text-cyan-950 text-xs">

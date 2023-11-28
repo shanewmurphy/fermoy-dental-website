@@ -6,7 +6,7 @@ import HygieneImg from "/public/Hygiene.jpg";
 import FillingsImg from "/public/Fillings.jpg";
 import DentalCrownsImg from "/public/DentalCrowns.jpg";
 import BridgesImg from "/public/bridges.jpg";
-
+import ArrowCirlceIcon from "/public/ArrowCircle.svg";
 const Treatments = () => {
   return (
     <div className="w-screen bg-deepgreen">
@@ -32,73 +32,101 @@ const Treatments = () => {
           </div>
         </div>
         <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 gap-16 antialiased">
-          <div className="relative group">
-            <figure className="effect-ruby">
-              <Image
-                src={HygieneImg}
-                alt="img02"
-                className="object-cover w-full h-full"
-              />
-              <figcaption>
-                <h2 className="font-semibold">Dental hygiene</h2>
-                <p className="font-medium">
-                  We specialise in helping patients with dental hygiene and
-                  making their smiles look great
-                </p>
-                <p>Link to Page</p>
-              </figcaption>
-            </figure>
+          <div className="relative group antialiased">
+            <Link href="Treatments">
+              <figure className="effect-ruby">
+                <Image
+                  src={HygieneImg}
+                  alt="img02"
+                  className="object-cover w-full h-full"
+                />
+                <figcaption>
+                  <h2 className="font-semibold">Dental hygiene</h2>
+                  <p className="font-medium">
+                    We specialise in helping patients with dental hygiene and
+                    making their smiles look great
+                  </p>
+                  <p className="font-semibold inline-flex items-center">
+                    Treatments
+                    <span className="pl-3">
+                      <Image src={ArrowCirlceIcon} />
+                    </span>
+                  </p>
+                </figcaption>
+              </figure>
+            </Link>
           </div>
           <div className="relative group">
-            <figure className="effect-ruby">
-              <Image
-                src={FillingsImg}
-                alt="img02"
-                className="object-cover w-full h-full"
-              />
-              <figcaption>
-                <h2 className="font-semibold">Fillings</h2>
-                <p>
-                  We specialise in helping patients with dental fillings and
-                  making their smiles look great.
-                </p>
-                <p>Link to Page</p>
-              </figcaption>
-            </figure>
+            <Link href="Treatments">
+              <figure className="effect-ruby">
+                <Image
+                  src={FillingsImg}
+                  alt="img02"
+                  className="object-cover w-full h-full"
+                />
+                <figcaption>
+                  <h2 className="font-semibold">Fillings</h2>
+                  <p className="font-medium">
+                    We specialise in helping patients with dental fillings and
+                    making their smiles look great.
+                  </p>
+                  <p className="font-semibold inline-flex items-center">
+                    Treatments
+                    <span className="pl-3">
+                      <Image src={ArrowCirlceIcon} />
+                    </span>
+                  </p>
+                </figcaption>
+              </figure>
+            </Link>
           </div>
           <div className="relative group">
-            <figure className="effect-ruby">
-              <Image
-                src={DentalCrownsImg}
-                alt="img02"
-                className="object-cover w-full h-full"
-              />
-              <figcaption>
-                <h2 className="font-semibold">Dental Crowns</h2>
-                <p>
-                  We specialise in helping patients with dental fillings and
-                  making their smiles look great.
-                </p>
-                <p>Link to Page</p>
-              </figcaption>
-            </figure>
+            <Link href="Treatments">
+              <figure className="effect-ruby">
+                <Image
+                  src={DentalCrownsImg}
+                  alt="img02"
+                  className="object-cover w-full h-full"
+                />
+                <figcaption>
+                  <h2 className="font-semibold">Dental Crowns</h2>
+                  <p className="font-medium">
+                    We specialise in helping patients with dental fillings and
+                    making their smiles look great.
+                  </p>
+                  <p className="font-semibold inline-flex items-center">
+                    Treatments
+                    <span className="pl-3">
+                      <Image src={ArrowCirlceIcon} />
+                    </span>
+                  </p>
+                </figcaption>
+              </figure>
+            </Link>
           </div>
           <div className="relative group">
-            <figure className="effect-ruby">
-              <Image
-                src={BridgesImg}
-                alt="img02"
-                className="object-cover w-full h-full"
-              />
-              <figcaption>
-                <h2 className="font-semibold">Dental Bridges</h2>
-                <p>
-                  We specialise in helping patients with dental fillings and
-                  making their smiles look great.
-                </p>
-                <p>Link to Page</p>
-              </figcaption>
-            </figure>
+            <Link href="Treatments">
+              <figure className="effect-ruby">
+                <Image
+                  src={BridgesImg}
+                  alt="img02"
+                  className="object-cover w-full h-full"
+                />
+                <figcaption>
+                  <h2 className="font-semibold">Dental Bridges</h2>
+                  <p className="font-medium">
+                    We specialise in helping patients with dental fillings and
+                    making their smiles look great.
+                  </p>
+                  <p className="font-semibold inline-flex items-center">
+                    Treatments
+                    <span className="pl-3">
+                      <Image src={ArrowCirlceIcon} />
+                    </span>
+                  </p>
+                </figcaption>
+              </figure>
+            </Link>
           </div>
         </div>
       </div>

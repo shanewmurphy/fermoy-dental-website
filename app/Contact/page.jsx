@@ -11,7 +11,7 @@ export default function ContactPage() {
     <div className="w-screen">
       <HeroPage />
       <div className="w-screen bg-lightBrown py-16 antialiased">
-        <div className="w-10/12 mx-auto text-cyan-950">
+        <div className="w-10/12 mx-auto lg:pt-12 text-cyan-950">
           <div>
             <h2 className="text-center font-bold mb-1">Contact Information</h2>
             <h6 className="text-center font-medium">
