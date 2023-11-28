@@ -122,12 +122,12 @@ export default function Footer() {
               </Link>
             </div>
             <div className="border-b-2 border-cyan-800">
-              <Link href="Treatments">
+              <Link href="About">
                 <h6 className="py-2 text-white">About Us</h6>
               </Link>
             </div>
             <div className="border-b-2 border-cyan-800">
-              <Link href="Treatments">
+              <Link href="Contact">
                 <h6 className="py-2 text-white">Contact Us</h6>
               </Link>
             </div>
