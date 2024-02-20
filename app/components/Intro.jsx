@@ -16,13 +16,13 @@ export default function IntroSection() {
               and creating personalised treatment plans to meet your unique
               needs.
             </p>
-            <div className="flex flex-row lg:mt-16 md:mt-8 sm:mt-8 gap-8">
+            <div className="flex flex-row lg:mt-16 md:mt-8 sm:mt-8 lg:gap-16 md:gap-8 sm:gap-6">
               <div className="basis-2/4">
                 <span className="mb-2">
                   <IconA />
                 </span>
                 <h6 className="font-bold text-cyan-950">Quality Care</h6>
-                <p className="text-xs font-medium">
+                <p className="lg:text-sm md:text-sm sm:text-xs font-medium">
                   Receive top-notch dental services from our experienced team of
                   professionals.
                 </p>
@@ -32,7 +32,7 @@ export default function IntroSection() {
                   <IconB />
                 </span>
                 <h6 className="font-bold text-cyan-950">Modern Facilities</h6>
-                <p className="text-xs font-medium">
+                <p className="lg:text-sm md:text-sm sm:text-xs font-medium">
                   Benefit from our state-of-the-art equipment and advanced
                   dental technology.
                 </p>
