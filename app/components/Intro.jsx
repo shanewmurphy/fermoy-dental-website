@@ -10,13 +10,13 @@ export default function IntroSection() {
             <h2 className="font-extrabold text-cyan-950 mb-3">
               Experience Exceptional Dental Care at Our Practice
             </h2>
-            <p className="text-sm font-bold text-cyan-950">
+            <p className="lg:text-lg md:text-lg sm:text-sm font-semibold text-cyan-950">
               At our dental practice in Fermoy, Co Cork, Ireland, we are
               committed to providing quality care, utilising modern facilities,
               and creating personalised treatment plans to meet your unique
               needs.
             </p>
-            <div className="flex flex-row mt-6 gap-8">
+            <div className="flex flex-row lg:mt-16 md:mt-8 sm:mt-8 gap-8">
               <div className="basis-2/4">
                 <span className="mb-2">
                   <IconA />
